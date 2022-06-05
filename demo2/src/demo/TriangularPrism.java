@@ -6,7 +6,7 @@ public class TriangularPrism extends shape {
 	private double area;
 	
 	public TriangularPrism(double height, double length) {
-		super(height);
+		setHeight(height);
 		this.length = length;
 	}
 

@@ -11,7 +11,7 @@ public class Cone extends shape {
 	}
 	
 	public Cone(double height, double radius) {
-		super(height);
+		setHeight(height);
 		this.radius = radius;
 	}
 

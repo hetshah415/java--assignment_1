@@ -15,7 +15,7 @@ public class driver {
 	public static void main(String[] args) {
 		
 		Cylinder c = new Cylinder(32.5,5.6);
-		double result = c.calcArea();
+		double result = c.calcVolume();
 		System.out.println(result);
 		
 		double[] arr = new double[20237];
@@ -30,44 +30,35 @@ public class driver {
 			StringTokenizer st = new StringTokenizer(line," ");
 			while(st.hasMoreTokens()) {
 				String tokenName = st.nextToken();
-				System.out.println(tokenName);
 				if(tokenName.equals("Cylinder")) {
 					Cylinder c1 = new Cylinder(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
-					System.out.println("yes there is cylinder");
 					li.add((shape)c1);
-					break;
+					
 				}
 				else if(tokenName.equals("Cone")) {
 					Cone c2 = new Cone(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
 					li.add((shape)c2);
-					System.out.println("Yes there is cone");
-					break;
 				}
 				else if(tokenName.equals("SquarePrism")) {
 					SquarePrism p1 = new SquarePrism(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
 					li.add((shape)p1);
-					System.out.println("yes there is prism");
-					break;
 				}
 				else if(tokenName.equals("OctagonalPrism")) {
 					OctagonalPrism p2 = new OctagonalPrism(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
 					li.add((shape)p2);
-					break;
 				}
 				else if(tokenName.equals("PentagonalPrism")) {
 					PentagonalPrism p3 = new PentagonalPrism(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
 					li.add((shape)p3);
-					break;
 				}
 				else if(tokenName.equals("TriangularPrism")) {
 					TriangularPrism p4 = new TriangularPrism(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
 					li.add((shape)p4);
-					break;
 				}
 				else if(tokenName.equals("Pyramid")) {
 					Pyramid p5 = new Pyramid(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
 					li.add((shape)p5);
-					break;
+					
 				}
 				line = fin.readLine();
 			}
@@ -86,7 +77,7 @@ public class driver {
 		
 		while(it.hasNext())
 		{
-			System.out.println(it.next().calcArea());
+			System.out.println(it.next().getHeight());
 		}
 		
 	}

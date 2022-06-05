@@ -8,7 +8,7 @@ public class SquarePrism extends shape {
 	
 	
 	public SquarePrism(double height, double length) {
-		super(height);
+		setHeight(height);
 		this.length = length;
 	}
 	@Override

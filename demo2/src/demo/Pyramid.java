@@ -7,7 +7,7 @@ public class Pyramid extends shape {
 	private double volume;
 	
 	public Pyramid(double height, double length) {
-		super(height);
+		setHeight(height);
 		this.length = length;
 	}
 	

@@ -6,7 +6,7 @@ public class PentagonalPrism extends shape {
 	private double area;
 	
 	public PentagonalPrism(double height, double length) {
-		super(height);
+		setHeight(height);
 		this.length = length;
 	}
 	@Override

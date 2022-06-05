@@ -6,7 +6,7 @@ public class OctagonalPrism extends shape {
 	private double area;
 	
 	public OctagonalPrism(double height, double length) {
-		super(height);
+		setHeight(height);
 		this.length = length;
 	}
 	@Override
