@@ -39,34 +39,34 @@ public class driver {
 				}
 				else if(tokenName.equals("Cone")) {
 					Cone c2 = new Cone(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
-					li.add(c2);
+					li.add((shape)c2);
 					System.out.println("Yes there is cone");
 					break;
 				}
 				else if(tokenName.equals("SquarePrism")) {
 					SquarePrism p1 = new SquarePrism(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
-					li.add(p1);
+					li.add((shape)p1);
 					System.out.println("yes there is prism");
 					break;
 				}
 				else if(tokenName.equals("OctagonalPrism")) {
 					OctagonalPrism p2 = new OctagonalPrism(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
-					li.add(p2);
+					li.add((shape)p2);
 					break;
 				}
 				else if(tokenName.equals("PentagonalPrism")) {
 					PentagonalPrism p3 = new PentagonalPrism(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
-					li.add(p3);
+					li.add((shape)p3);
 					break;
 				}
 				else if(tokenName.equals("TriangularPrism")) {
 					TriangularPrism p4 = new TriangularPrism(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
-					li.add(p4);
+					li.add((shape)p4);
 					break;
 				}
 				else if(tokenName.equals("Pyramid")) {
 					Pyramid p5 = new Pyramid(Double.parseDouble(st.nextToken()),Double.parseDouble(st.nextToken()));
-					li.add(p5);
+					li.add((shape)p5);
 					break;
 				}
 				line = fin.readLine();
